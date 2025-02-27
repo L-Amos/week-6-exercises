@@ -2,7 +2,7 @@
 // README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
 	// A name for the dev container displayed in the UI.
-	"name": "UCL PHAS0100 C++ Development Container",
+	"name": "UCL COMP0210 C++ Development Container",
 	"build": {
 		// The location of a Dockerfile that defines the contents of the container.
 		"dockerfile": "Dockerfile",
