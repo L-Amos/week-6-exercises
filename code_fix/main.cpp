@@ -29,8 +29,8 @@ class Array {
 
     void increment() {
       // Increment all elements
-      for (int i=0; i<=nn; i++) {
-        for (int j=0; j<=nm; j++) {
+      for (int i=0; i<nn; i++) {
+        for (int j=0; j<nm; j++) {
           get(i, j)+=1;
         }
       }
