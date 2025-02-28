@@ -69,7 +69,7 @@ class Array {
       // Create new data
       auto data_new = new int[total_size_new];
       // Copy old data
-      for(int i=0; i<total_size; ++i) {
+      for(int i=0; i<total_size_new; ++i) {
         data_new[i] = data[i];
       }
       // Assign new data pointer to old
