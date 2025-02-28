@@ -16,7 +16,7 @@ class Array {
 
     void initialise() {
       // Initialise data to 0
-      for(int i=0; i<total_size; ++i) {
+      for(int i=0; i<total_size; i++) {
         data[i] = 0.0;
       }
     }
@@ -29,8 +29,8 @@ class Array {
 
     void increment() {
       // Increment all elements
-      for (int i=0; i<=nn; ++i) {
-        for (int j=0; j<=nm; ++j) {
+      for (int i=0; i<=nn; i++) {
+        for (int j=0; j<=nm; j++) {
           get(i, j)+=1;
         }
       }
@@ -38,8 +38,8 @@ class Array {
 
     bool find(int val) {
       // Search for val in array
-      for (int i=0; i<nn; ++i) {
-        for (int j=0; j<nm; ++j) {
+      for (int i=0; i<nn; i++) {
+        for (int j=0; j<nm; j++) {
           if(get(i,j)==val) {
             return true;
           }
@@ -50,8 +50,8 @@ class Array {
 
     void print() {
       // Print to stdout
-      for (int i=0; i<nn; ++i) {
-        for (int j=0; j<nm; ++j) {
+      for (int i=0; i<nn; i++) {
+        for (int j=0; j<nm; j++) {
           std::cout << get(j,i);
         }
         std::cout << std::endl;
@@ -104,7 +104,7 @@ void test(bool test_value, const std::string msg = "") {
 
 int main() {
   Array arr(10, 5);
-
+  arr.initialise();  // Initialise array
   std::cout << "Testing increment" << std::endl;
   test(arr.get(1, 2) == 0);
   arr.increment();
