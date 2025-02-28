@@ -52,7 +52,7 @@ class Array {
       // Print to stdout
       for (int i=0; i<nn; i++) {
         for (int j=0; j<nm; j++) {
-          std::cout << get(j,i);
+          std::cout << get(i,j);
         }
         std::cout << std::endl;
       }
