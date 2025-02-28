@@ -40,7 +40,7 @@ class Array {
       // Search for val in array
       for (int i=0; i<nn; ++i) {
         for (int j=0; j<nm; ++j) {
-          if(get(i,j)=val) {
+          if(get(i,j)==val) {
             return true;
           }
         }
