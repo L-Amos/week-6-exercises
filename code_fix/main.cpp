@@ -4,10 +4,7 @@
 class Array {
   public:
     Array(int nn_in, int nm_in)
-    : nn(nn_in)
-    , nm(nm_in)
-    , total_size(nn*nm)
-    , data(nullptr)
+        : nn(nn_in), nm(nm_in), total_size(nn * nm), data(nullptr)
     {
       data = new int[total_size];
     }
