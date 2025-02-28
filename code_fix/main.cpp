@@ -11,7 +11,7 @@ class Array {
 
     ~Array() {
       // Make sure to clean up memory!
-      delete data;
+      delete[] data;
     }
 
     void initialise() {
@@ -89,7 +89,7 @@ class Array {
 };
 
 Array* makeSquareArray(int nn, int nm) {
-  auto arr_p = new Array(nn, nm);
+  Array* arr_p = new Array(nn, nm);
   if(arr_p->is_square()) {
     std::cout << "Phew, matrix is square" << std::endl;
   } else {
